@@ -1,0 +1,81 @@
+@define-color black #222222;
+@define-color white #FFFFFA;
+@define-color accent #3094d0;
+@define-color transparent rgba(0,0,0,0);
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+    transition: background-color 0.2s;
+}
+
+window#waybar {
+    background-color: rgba(0, 43, 54, 0.0);
+    color: @white;
+}
+
+tooltip {
+    background-color: @black;
+}
+tooltip label {
+    color: @white;
+}
+
+/* Modules background */
+#workspaces button,
+#mode,
+#clock,
+#cpu,
+#custom-scripts,
+#memory,
+#temperature,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-media,
+#custom-power,
+#idle_inhibitor,
+#language,
+#backlight,
+#window,
+#disk {
+    margin: 5px;
+    padding: 3px 12px;
+    border-radius: 10px;
+    background: @black;
+    color: @white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Workspace buttons */
+#workspaces button {
+    margin: 5px 0;
+    border-radius: 0;
+    background: @black;
+    color: @white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    padding: 0 6px;
+    font-weight: normal;
+}
+
+#workspaces button:first-child {
+    border-radius: 10px 0 0 10px;
+    margin-left: 5px;
+}
+
+#workspaces button:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Focused workspace */
+#workspaces button.active,
+#workspaces button:hover {
+    background: @white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0);
+    color: @black;
+    border: none;
+}

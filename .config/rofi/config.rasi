@@ -1,0 +1,26 @@
+@theme "/usr/share/rofi/themes/android_notification.rasi"
+
+configuration {
+    font: "JetBrainsMono Nerd Font 12";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: " {name}";
+    display-drun: "Apps";
+    click-to-exit: true;
+    matching: "fuzzy";
+    sorting-method: "fzf";
+    case-sensitive: false;
+}
+
+* {
+    background: #222222;
+    background-colour: @background;
+    normal-background: @background;
+    selected-normal-background: #FFFFFF;
+    selected-normal-foreground: @background;
+    alternate-normal-background: @background;
+}
+
+window {
+    width: 20%;
+}
