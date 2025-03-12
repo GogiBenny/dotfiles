@@ -1,0 +1,18 @@
+# Ignore plugin lockfile
+lazy-lock.json
+lua/env.lua
+
+# Swap, backup, undo files (just in case)
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore local stylua config if you’re not customizing it
+.stylua.toml
+
+# If you ever run :checkhealth or other diagnostic tools
+healthcheck.log
+
+# LSP logs or session data
+*.log
