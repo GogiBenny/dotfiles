@@ -1,4 +1,6 @@
 {
+    "layer": "top",
+        "output": "DP-2",
     "modules-left": [
         "hyprland/workspaces"
     ],
@@ -17,8 +19,10 @@
     "hyprland/workspaces": {
         "disable-scroll": true,
         "format": "{name}",
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
         "persistent-workspaces": {
-            "*": [ 1,2,3,4,5 ]
+            "*": [ 1,2,3,4,5,6 ]
         }
     },
 
